@@ -1,0 +1,65 @@
+version: "3.1"
+
+intents:
+  - greet
+  - return
+  - shipping_time
+  - discounts
+  - sizing
+  - shipping_cost
+  - fashion_trends
+  - recommend_outfit
+  - material_care
+  - accessory_tips
+  - goodbye
+  - affirm
+  - deny
+
+entities:
+  - days
+
+regex:
+  - name: number
+    pattern: "[0-9]+"
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_shipping_time:
+  - text: "Shipping usually takes 3-5 business days."
+
+  utter_discounts:
+  - text: "We offer seasonal discounts and promotions. Check our website for current offers!"
+
+  utter_sizing:
+  - text: "Our sizing chart can help you choose the right size. Please check our size guide for details."
+
+  utter_shipping_cost:
+  - text: "Shipping costs vary depending on location. Standard shipping starts at $5."
+
+  utter_fashion_trends:
+  - text: "Currently, fashion trends include bright colors, oversized blazers, maxi dresses, and bold prints. Stay stylish by incorporating these into your wardrobe!"
+
+  utter_ask_occasion:
+  - text: "For what occasion do you need an outfit? (e.g., wedding, party, business meeting)"
+
+  utter_material_care:
+  - text: "To wash delicate fabrics like silk, use a mild detergent and hand-wash. For wool, cool water and gentle handling are essential. Store clothes in a cool, dry place to maintain their quality, and for summer outfits, lightweight fabrics like cotton or linen are ideal."
+
+  utter_accessory_tips:
+  - text: "For a black dress, consider pairing it with silver or gold accessories for a chic look. A matching bag can also complement your outfit beautifully. Denim jackets pair well with casual accessories, like layering necklaces or bracelets. For shoes, consider classic pumps or trendy sneakers, depending on the outfit style."
+
+  utter_return_policy:
+  - text: "Our return policy allows returns within {allowed_days} days. You mentioned {days} days."
+
+actions:
+  - action_recommend_outfit
+  - action_check_return_policy
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

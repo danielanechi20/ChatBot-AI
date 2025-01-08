@@ -1,0 +1,6 @@
+{
+  "rule_only_slots": [
+    "x_days"
+  ],
+  "rule_only_loops": []
+}

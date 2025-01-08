@@ -1,0 +1,125 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: return
+  examples: |
+    - Can I return products after [30](days:30) days?
+    - Can I return products after [45](days:45) days?
+    - Is it possible to return an item after [15](days:15) days?
+
+
+- intent: shipping_time
+  examples: |
+    - How long is shipping?
+    - What is the delivery time?
+    - When will my package arrive?
+    - How many days does shipping take?
+    - What’s the expected delivery time?
+
+- intent: discounts
+  examples: |
+    - Do you offer discounts?
+    - Are there any sales right now?
+    - Do you have any promotions?
+    - Are there student discounts available?
+    - Can I get a discount code?
+
+- intent: sizing
+  examples: |
+    - Can you tell me about sizing?
+    - How do I choose the right size?
+    - Do you have a size chart?
+    - How do I measure myself for sizing?
+    - What are your size options?
+
+- intent: shipping_cost
+  examples: |
+    - What are the shipping costs?
+    - How much does shipping cost?
+    - Is shipping free?
+    - Do you charge for shipping?
+    - Are there any shipping fees?
+
+- intent: fashion_trends
+  examples: |
+    - What colors are trendy this season?
+    - Are oversized blazers still in style?
+    - What are the latest trends in dresses?
+    - Can you tell me if bold prints are fashionable now?
+    - What’s popular in fashion right now, like colors or styles?
+
+- intent: material_care
+  examples: |
+    - How should I wash silk clothing?
+    - What’s the best way to care for wool fabrics?
+    - Can you tell me how to handle delicate materials?
+    - How do I clean silk and wool items?
+    - What detergent should I use for silk clothing?
+
+
+- intent: accessory_tips
+  examples: |
+    - What accessories go with a black dress for a chic look?
+    - Can you suggest necklaces or bracelets for casual outfits?
+    - What kind of accessories work best with a black dress?
+    - Do you have tips for layering accessories with casual outfits?
+    - Should I wear silver or gold with a black dress?
+
+- intent: recommend_outfit
+  examples: |
+    - Can you recommend an outfit for a wedding?
+    - What should I wear to a beach party?
+    - Suggest an outfit for a business meeting.
+    - What do you recommend for a casual weekend look?
+    - Can you help me pick an outfit for a date night?
+
+
+

@@ -1,0 +1,61 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Greet the user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Respond to sizing
+  steps:
+    - intent: sizing
+    - action: utter_sizing
+
+- rule: Respond to shipping_time
+  steps:
+    - intent: shipping_time
+    - action: utter_shipping_time
+
+- rule: Respond to discounts
+  steps:
+    - intent: discounts
+    - action: utter_discounts
+
+- rule: Respond to shipping_cost
+  steps:
+    - intent: shipping_cost
+    - action: utter_shipping_cost
+
+- rule: Respond to fashion trends
+  steps:
+    - intent: fashion_trends
+    - action: utter_fashion_trends
+
+- rule: Respond to material care
+  steps:
+    - intent: material_care
+    - action: utter_material_care
+
+- rule: Respond to accessory tips
+  steps:
+    - intent: accessory_tips
+    - action: utter_accessory_tips
+
+- rule: Recommend an outfit
+  steps:
+    - intent: recommend_outfit
+    - action: action_recommend_outfit
+
+- rule: Handle return queries with days
+  steps:
+    - intent: return
+    - action: action_check_return_policy
+
+
+
